@@ -1,6 +1,6 @@
 <div class="container-fluid">
   <div class="row">
-    <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
+    <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'> 
       <!-- Name input -->
       <div class="form-group">
         <label for="name">Name</label>
@@ -12,7 +12,7 @@
       </div>
       <!-- Description input -->
       <div class="form-group">
-        <label for="description">Description</label>
+        <label for="description">Quote</label>
         <textarea class="form-control" id="description" rows="4" [(ngModel)]="newQuote.description" name="description" #description="ngModel" required></textarea>
          <!-- {{newQuote.description}} -->
         <div [hidden]="description.valid || description.pristine" class="alert alert-danger">
