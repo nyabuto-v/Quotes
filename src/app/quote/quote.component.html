@@ -1,18 +1,20 @@
-<div class="jumbotron">
+<div class="active">
 <h1> Great Quotes </h1>
+</div>
 <div class="container">
-  <div class="row btn-block">
+
+  <div class="row">
     <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
   </div>
-  <div class="row btn-block" *ngFor='let quote of quotes; let i = index'>
+  <div class="row" *ngFor='let quote of quotes; let i = index'>
     <div class="row">
     <h5 id="{{i}}">{{quote.name}} due on {{quote.completeDate|date|uppercase}}</h5>
     <button class="btn btn-primary" (click)='toogleDetails(i)'>Show More..</button>
   </div>
-  <div class="row btn-block" *ngIf="quote.showDescription">
+  <div class="row" *ngIf="quote.showDescription">
     <app-quote-details [quote]='quote'(isComplete)= 'deleteQuote($event,i)'></app-quote-details>
     </div>
   </div>
 </div>
 <p *ngIf='quotes.length > 5'>You have too many quotes</p>
-</div>
+
