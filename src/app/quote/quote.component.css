@@ -3,6 +3,10 @@
     background-image:url('./assets/bg3-image.jpg');
     background-position:50% 50%;
   } */
-  .jumbotron{
+  /* .jumbotron{
     background-size: 100%;
+  } */
+  body{
+    background-image:url('./assets/bg2-image.jpeg');
   }
+ 
