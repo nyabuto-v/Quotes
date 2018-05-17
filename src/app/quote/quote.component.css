@@ -3,6 +3,6 @@
     background-image:url('./assets/bg3-image.jpg');
     background-position:50% 50%;
   } */
-  body{
+  .jumbotron{
     background-color: brown;
   }
